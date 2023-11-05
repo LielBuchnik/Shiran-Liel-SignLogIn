@@ -7,7 +7,6 @@
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
-    height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(rgb(4, 0, 63) 0%, rgb(10, 0, 46) 100%);
     background-repeat: no-repeat;
@@ -15,7 +14,8 @@ body {
 }
 
 
-.main-container{  /* only on homepage */
+.main-container{ 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,7 @@ input:hover{
 .h_p_container{
     display: block;
     color: white;
+    height: 100vh;
 }
 
 h1{

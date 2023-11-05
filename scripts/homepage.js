@@ -1,3 +1,4 @@
+if(localStorage.getItem('usersData')){
 let container = document.getElementById("h_p_container");
 let xhr=new XMLHttpRequest();
 
@@ -27,4 +28,7 @@ xhr.onload=function()
 };
 
 
-xhr.send();
+xhr.send();}
+else {
+    window.location.href = "./login.html";
+}
