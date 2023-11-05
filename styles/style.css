@@ -67,6 +67,12 @@ input:hover{
     font-size: 14px;
     text-align: center;
 }
+
+.h_p_container{
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .card{
-    
+
 }
