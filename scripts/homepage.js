@@ -11,7 +11,7 @@ xhr.onload=function()
     for(let x in response){
         let obj =response[x];
         let html =
-        `<ul>
+        `<ul class ="card">
             <li>user id: ${obj.id}</li>
             <li>user name: ${obj.name}</li>
             <li>user username: ${obj.username}</li>
@@ -19,7 +19,6 @@ xhr.onload=function()
             <li>user address: ${obj.address.street + ""+obj.address.suite + ""+ obj.address.city+""+ obj.address.zipcode + " "  + "" + obj.address.geo.lat+" "+ obj.address.geo.lng}</li>
             <li>user phone: ${obj.phone}</li>
             <li>user website: ${obj.website}</li>
-            <button id="lgnBtn"> show more data </button>
         </ul>`
         //$("#container").innerHtml(html);
         container.innerHTML+=html;
