@@ -8,11 +8,18 @@
 </head>
 <body>
     <div id="container">
-        <input type="text" placeholder="username" id="username">
-        <input type="text" placeholder="password" id="password">
-        <button id="logbtn" onclick="login()">Log - In</button>
-        <div id="underHint"></div>
-   
+         <div>
+            <div><label>Username</label></div>
+            <input type="text" placeholder="username" id="username">
+            <div><label>password</label></div>
+            <input type="text" placeholder="password" id="password">
+            
+        </div>
+        <div>
+         <button id="logbtn" onclick="login()">Log - In</button>
+        </div>
+        
+            <div id="underHint"></div>
     </div>
     <script src="../scripts/login.js"></script>
 
