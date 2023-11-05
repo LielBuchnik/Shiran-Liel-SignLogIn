@@ -85,5 +85,8 @@ h1{
 }
 
 .card{
+    list-style-type: none;
+    border: 1px solid white;
+    padding: 10px;
 
 }
