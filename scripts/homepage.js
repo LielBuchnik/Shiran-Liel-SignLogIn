@@ -1,13 +1,6 @@
 let container = document.getElementById("container");
 let xhr=new XMLHttpRequest();
 
-function show_more_data(x){
-    localStorage.setItem("userDetails", JSON.stringify(x));
-    window.location.href = "./homePage.html";
-
-}
-
-
 xhr.open("Get","https://jsonplaceholder.typicode.com/users",true);
 
 
