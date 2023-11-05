@@ -7,7 +7,7 @@ function login(){
 
     let username = document.getElementById("username");
     let password = document.getElementById("password");
-    if (username.value == "" || password.value == "") {
+    if (username.value == "" || password.value == "" || username.value!=usersData.username || password.value!=usersData.password ) {
         underHint.innerHTML = "Incorrect Data, Please try again!";
         clearHint()
     } 
