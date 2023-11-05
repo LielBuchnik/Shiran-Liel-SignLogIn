@@ -1,3 +1,6 @@
+let underHint = document.getElementById('underHint')
+
+
 function login(){
     
     let usersData = JSON.parse(localStorage.getItem("usersData"));
@@ -5,7 +8,8 @@ function login(){
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     if (username.value == "" || password.value == "") {
-        alert("Missing Data");
+        underHint.innerHTML = "YOU FORGOT TO FILL SOME INPUTS!";
+        clearHint()
     } 
     else if (username.value==usersData.username && password.value==usersData.password)
     {
@@ -15,3 +19,12 @@ function login(){
     }
 }
 
+
+async function clearHint(){
+    await delay(3000)
+    underHint.innerHTML = ''
+}
+
+function delay(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
