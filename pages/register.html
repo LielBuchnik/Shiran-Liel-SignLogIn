@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Register</title>
 </head>
 
 <body>
     <div id="container">
         <div>
-            <div><label>Username</label></div>
-            <div><input type="text" id="username"></div>
-            <div><label>Password</label></div>
-            <div><input type="password" id="password"></div>
-            <div> <label for="confirmPass">Confirm Password</label></div>
-            <div><input type="password" id="confirmPass"></div>
+            <div><label for="username">Username</label></div>
+            <div><input type="text" id="username"  placeholder="Shiran"></div>
+            <div><label for="password">Password</label></div>
+            <div><input type="password" id="password" placeholder=""></div>
+            <div><label for="confirmPass">Confirm Password</label></div>
+            <div><input type="password" id="confirmPass" placeholder=""></div>
             <div></div><label for="email">Email</label>
-            <div><input type="email" id="email"></div>
+            <div><input type="email" id="email" placeholder="email@email.com"></div>
         </div>
         <div class="btndiv">
             <button id="logbtn" onclick="userSubmition(username.value, password.value, confirmPass.value, email.value)">Sign Up</button>

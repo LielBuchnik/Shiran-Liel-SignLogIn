@@ -10,13 +10,13 @@ function userSubmition(username, password, confirmPass, email) {
     }
 
     if (!password || !username) {
-        underHint.innerHTML = "YOU FORGOT TO FILL SOME INPUTS!";
+        underHint.innerHTML = "You Forgot to Fill Some Inputs!";
         clearHint()
         localStorage.clear();
         return false;
     } else
      if (password !== confirmPass) {
-        underHint.innerHTML = "Passwords do not match.";
+        underHint.innerHTML = "Passwords Do Not Match!";
         clearHint()
         localStorage.clear();
         return false;

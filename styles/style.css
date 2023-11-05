@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*{
+    transition: 0.1s;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(rgb(4, 0, 63) 0%, rgb(10, 0, 46) 100%);
+}
+
+#container {
+    font-size: 17px;
+    color: white;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-radius: 8px;
+}
+
+label{
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+input{
+    background-color: transparent;
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 8px;
+    color: white;
+}
+
+#logbtn{
+    margin-top: 15px;
+    margin-left: 38%;
+    width: 75px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 8px;
+}
+
+#logbtn:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+input:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#underHint{
+    color: rgb(255, 98, 98);
+    height: 25px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+}
