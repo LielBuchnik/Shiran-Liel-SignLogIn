@@ -7,14 +7,18 @@
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(rgb(4, 0, 63) 0%, rgb(10, 0, 46) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+.main-container{  /* only on homepage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -71,9 +75,15 @@ input:hover{
 }
 
 .h_p_container{
+    display: block;
     color: white;
-  
 }
+
+h1{
+    text-align: center;
+    color: white;
+}
+
 .card{
 
 }
