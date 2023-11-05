@@ -8,7 +8,7 @@ function login(){
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     if (username.value == "" || password.value == "") {
-        underHint.innerHTML = "YOU FORGOT TO FILL SOME INPUTS!";
+        underHint.innerHTML = "Incorrect Data, Please try again!";
         clearHint()
     } 
     else if (username.value==usersData.username && password.value==usersData.password)
