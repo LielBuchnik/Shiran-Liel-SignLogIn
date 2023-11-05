@@ -7,10 +7,11 @@ function login(){
     if (username.value == "" || password.value == "") {
         alert("Missing Data");
     } 
-    else {
+    else if (username.value==usersData.username && password.value==usersData.password)
+    {
 
-                localStorage.setItem("userDetails", JSON.stringify(user));
+                localStorage.setItem("userDetails", JSON.stringify(usersData));
                 window.location.href = "./homePage.html";   
-        }
+    }
 }
 
